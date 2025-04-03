@@ -1,6 +1,12 @@
-@use 'normalize.scss';
-@use 'fonts.scss';
-@use 'variables.scss';
-@use 'utils.scss';
-@use 'globals.scss';
+@use './_normalize.scss';
+@use './_fonts.scss';
+@use './_variables.scss';
+@use './_utils.scss';
+@use './_globals.scss';
+
+@use './blocks/_icon.scss';
+@use './blocks/_logo.scss';
+@use './blocks/_header.scss';
+@use './blocks/_button.scss';
+@use './blocks/_burger-button.scss';
 

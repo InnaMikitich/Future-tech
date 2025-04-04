@@ -1,11 +1,11 @@
-@use './normalize.scss';
-@use './fonts.scss';
-@use './variables.scss';
-@use './utils.scss';
-@use './globals.scss';
+@use './normalize';
+@use './fonts';
+@use './variables';
+@use './globals';
+@use './utils';
 
 body {
-    p {
-        color: red;
-    }
+ header {background-color: red;
+ }
+   
 }

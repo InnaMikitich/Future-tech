@@ -10,3 +10,10 @@
 @use './blocks/_button.scss';
 @use './blocks/_burger-button.scss';
 
+@use './blocks/badge';
+@use './blocks/socia1s';
+@use './blocks/footer';
+
+.header {
+    display: none !important;
+}

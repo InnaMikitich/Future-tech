@@ -750,6 +750,53 @@ button[aria-label]::before {
   }
 }
 
+.metrics__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.metrics__item {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 0.625rem;
+  padding: 3.125rem;
+}
+.metrics__item:first-child {
+  padding-left: 0;
+}
+.metrics__item:not(:last-child) {
+  border-right: var(--border);
+}
+.metrics__value {
+  font-weight: 600;
+}
+.metrics__sign {
+  color: var(--color-accent);
+}
+
+.advantage-card {
+  display: grid;
+  row-gap: 1.875rem;
+}
+.advantage-card__link {
+  --circleSize: 3.25rem;
+  --circleMarginLeft: 1.25rem;
+  position: relative;
+  display: grid;
+  row-gap: 0.25rem;
+  padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+}
+.advantage-card__link::after {
+  width: var(--circleSize);
+  height: var(--circleSize);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  content: "";
+  right: 0;
+  background: url("../icons/arrow-top-right-black.svg") center no-repeat var(--color-accent);
+  border-radius: 50%;
+}
+
 .hero__main {
   display: grid;
   grid-template-columns: 60% auto;
@@ -757,12 +804,75 @@ button[aria-label]::before {
 }
 .hero__body {
   grid-area: body;
+  padding-top: 9.375rem;
+  padding-right: 3.125rem;
+  padding-bottom: 6.25rem;
 }
 .hero__resources-preview {
   grid-area: resources-preview;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  border-left: var(--border);
+  background: url("../images/resources-preview/Container.png") 0 0/cover no-repeat;
 }
 .hero__metrics {
   grid-area: metrics;
+}
+.hero__subtitle {
+  font-size: clamp(1.125rem, 0.9338235294rem + 0.7843137255vw, 1.875rem);
+  font-family: var(--font-family-accent);
+  font-weight: 500;
+  color: var(--color-dark-40);
+}
+.hero__subtitle:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+.hero__title:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.hero__advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero__advantages-item {
+  --paddingX: 5rem;
+  padding-block: 3.125rem;
+}
+.hero__advantages-item:not(:first-child) {
+  padding-left: var(--paddingX);
+}
+.hero__advantages-item:not(:last-child) {
+  padding-right: var(--paddingX);
+  border-right: var(--border);
+}
+
+.resources-preview {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.875rem;
+  align-items: start;
+  justify-content: end;
+}
+.resources-preview__body {
+  display: grid;
+  row-gap: 0.875rem;
+}
+
+.team {
+  --personImageSize: 3.75rem;
+  display: flex;
+  padding: 0.625rem;
+  background-color: var(--color-dark-10);
+  border-radius: 6.25rem;
+}
+.team__person {
+  width: var(--personImageSize);
+  background-color: var(--color-dark-15);
+  border-radius: 50%;
+  border: 0.125rem solid var(--color-dark-40);
+}
+.team__person:not(:first-child) {
+  margin-left: calc(var(--personImageSize) / 4 * -1);
 }
 
 .header, footer {

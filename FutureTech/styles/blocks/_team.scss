@@ -14,9 +14,21 @@
         border-radius: 50%;
         border: rem(2) solid var(--color-dark-40);
 
+        @include laptop {
+            border-width: rem(1);
+        }
+
         &:not(:first-child) {
             margin-left: calc(var(--personImageSize) / 4 * -1);
         }
     }
+@include laptop {
+    --personImageSize: #{rem(50)};
+    padding: rem(8);
+}
 
+@include tablet {
+    --personImageSize: #{rem(40)};
+  
+  }
 }

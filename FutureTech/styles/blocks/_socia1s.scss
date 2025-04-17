@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.socia1s {
+
+    &__item {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: rem(20);
+
+        @include mobile {
+            column-gap: rem(14);  
+        }
+    }
+
+    &__link {
+        --size: #{rem(24)};
+
+        @include square(var(--size));
+        color: var(--color-ligth);
+
+        @include laptop {
+            --size: #{rem(20)};
+        }
+    }
+}

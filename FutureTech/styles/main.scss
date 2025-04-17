@@ -1,11 +1,26 @@
-@use './normalize.scss';
-@use './fonts.scss';
-@use './variables.scss';
-@use './utils.scss';
-@use './globals.scss';
 
-body {
-    p {
-        color: red;
-    }
+@use './_normalize.scss';
+@use './_fonts.scss';
+@use './_variables.scss';
+@use './_utils.scss';
+@use './_globals.scss';
+
+
+@use './blocks/_icon.scss';
+@use './blocks/_logo.scss';
+@use './blocks/_header.scss';
+@use './blocks/_button.scss';
+@use './blocks/_burger-button.scss';
+
+@use './blocks/badge';
+@use './blocks/socia1s';
+@use './blocks/footer';
+@use './blocks/metrics';
+@use './blocks/advantage-card';
+@use './blocks/hero';
+@use './blocks/resources-preview';
+@use './blocks/team';
+
+.header, footer {
+    display: none !important;
 }

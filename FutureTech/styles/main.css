@@ -1054,7 +1054,13 @@ button[aria-label]::before {
   }
 }
 
-.header, footer {
+.section__header {
+  padding-block: clamp(2.5rem, 1.2254901961rem + 5.2287581699vw, 7.5rem);
+  background-color: var(--color-dark-10);
+}
+
+.header,
+main > *:not(:last-child), .footer {
   display: none !important;
 }
 

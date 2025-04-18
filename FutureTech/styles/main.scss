@@ -4,21 +4,28 @@
 @use './_utils.scss';
 @use './_globals.scss';
 
-@use './blocks/_icon.scss';
-@use './blocks/_logo.scss';
-@use './blocks/_header.scss';
-@use './blocks/_button.scss';
-@use './blocks/_burger-button.scss';
+@use './blocks/icon';
+@use './blocks/logo';
+@use './blocks/header';
+@use './blocks/button';
+@use './blocks/burger-button';
 
-@use './blocks/badge';
-@use './blocks/socia1s';
-@use './blocks/footer';
-@use './blocks/metrics';
-@use './blocks/advantage-card';
-@use './blocks/hero';
-@use './blocks/resources-preview';
-@use './blocks/team';
+@use './blocks/badge.scss';
+@use './blocks/_socia1s.scss';
+@use './blocks/_footer.scss';
+@use './blocks/_metrics.scss';
+@use './blocks/_advantage-card.scss';
+@use './blocks/_hero.scss';
+@use './blocks/_resources-preview.scss';
+@use './blocks/_team.scss';
 
-.header, footer {
+@use './blocks/card';
+@use './blocks/section';
+@use './blocks/list';
+@use './blocks/tile';
+@use './blocks/tag';
+
+.header,
+main > *:not(:last-child), .footer {
     display: none !important;
 }

@@ -20,16 +20,32 @@
     border: var(--border);
     border-radius: rem(8);
     font-size:rem(18);
-    background-color: var(--color-dark-15);
+    background-color: transparent;
     color: var(--color-gray-60);
 
     &.is-active {
         color: var(--color-ligth);
         background-color: var(--color-dark-10);
+        font-weight: 500;
+        pointer-events: none;
+    }
+
+    @include hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);  
     }
 
     @include laptop {
         font-size:rem(14);
+    }
+   }
+   &__content {
+    &:not(.is-active) {
+      display: none;  
+    }
+
+    &:focus-visible {
+        outline-offset: -1rem;
     }
    }
 }

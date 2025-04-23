@@ -1,0 +1,35 @@
+@use '../helpers' as *;
+
+.tabs {
+    &__header {
+        border-bottom: var(--border);
+    }
+   &__buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-block: fluid(50, 20);
+    column-gap: rem(20);
+
+    @include laptop {
+        column-gap: rem(14); 
+    }
+   } 
+
+   &__button {
+    padding: fluid(30 , 18) rem(11);
+    border: var(--border);
+    border-radius: rem(8);
+    font-size:rem(18);
+    background-color: var(--color-dark-15);
+    color: var(--color-gray-60);
+
+    &.is-active {
+        color: var(--color-ligth);
+        background-color: var(--color-dark-10);
+    }
+
+    @include laptop {
+        font-size:rem(14);
+    }
+   }
+}

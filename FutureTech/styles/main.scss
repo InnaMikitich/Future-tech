@@ -9,7 +9,6 @@
 @use './blocks/header';
 @use './blocks/button';
 @use './blocks/burger-button';
-
 @use './blocks/badge.scss';
 @use './blocks/_socia1s.scss';
 @use './blocks/_footer.scss';
@@ -18,22 +17,21 @@
 @use './blocks/_hero.scss';
 @use './blocks/_resources-preview.scss';
 @use './blocks/_team.scss';
-
 @use './blocks/card';
 @use './blocks/section';
 @use './blocks/list';
 @use './blocks/tile';
 @use './blocks/tag';
-
 @use './blocks/tabs';
 @use './blocks/person-card';
 @use './blocks/blog-actions';
 @use './blocks/blog-card';
-
 @use './blocks/download-info';
 @use './blocks/bordered-grid';
 @use './blocks/rating-view';
 @use './blocks/review-card';
+@use './blocks/about-card';
+@use './blocks/about';
 
 
 

@@ -105,6 +105,19 @@
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+
+        &--3-cols-alt {
+            grid-template-columns: repeat(3, 1fr);
+            gap: fluid(50, 20) rem(20);
+
+            @include laptop {
+                column-gap: rem(16);
+            }
+
+            @include mobile-s {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     
 
     }
@@ -115,6 +128,8 @@
         justify-content: start;
         flex-direction: column;
         row-gap: fluid(20, 4);
+
+     
 
         
         &:has(> *:only-child) {
@@ -136,8 +151,26 @@
             color: inherit;
         }
 
+        &:not(.tile) {
+            @include mobile-s {
+                grid-template: initial;
+
+                .card__cell-link {
+                    grid-area: initial;
+                }
+            }
+        }
+
         &--wide {
             grid-column: -1/1;
+        }
+
+        &--wide-on-mobile-s {
+
+            @include mobile-s {
+                grid-column: -1/1;
+            }
+            
         }
  
 
@@ -156,7 +189,9 @@
             }
         }
 
-
+        &.tile {
+            padding: fluid(40, 20);
+        }
 
     }
 

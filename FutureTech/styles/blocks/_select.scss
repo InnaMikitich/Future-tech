@@ -2,8 +2,9 @@
 
 .select {
   &__original-control {
+    min-width: rem(100);
     @include mobile-above {
-        @include visually-hidden;
+      @include visually-hidden;
     }
   }
   
@@ -12,6 +13,16 @@
 
     @include mobile {
         @include visually-hidden;
+    }
+  }
+
+  &__button,
+  &__option {
+    user-select: none;
+    cursor: pointer;
+
+    * {
+        pointer-events: none;
     }
   }
 
@@ -86,7 +97,7 @@
     column-gap: rem(10);
     padding: rem(10);
     border: var(--border);
-    border-radius: initial;
+    border-radius: inherit;
 
     @include hover {
         color: var(--color-accent);

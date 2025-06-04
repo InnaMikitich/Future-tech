@@ -2414,6 +2414,9 @@ button[aria-label]::before {
   }
 }
 
+.select__original-control {
+  min-width: 6.25rem;
+}
 @media (width >= 47.99875rem) {
   .select__original-control {
     position: absolute !important;
@@ -2444,6 +2447,13 @@ button[aria-label]::before {
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
   }
+}
+.select__button, .select__option {
+  user-select: none;
+  cursor: pointer;
+}
+.select__button *, .select__option * {
+  pointer-events: none;
 }
 .select__button {
   display: flex;
@@ -2508,7 +2518,7 @@ button[aria-label]::before {
   column-gap: 0.625rem;
   padding: 0.625rem;
   border: var(--border);
-  border-radius: initial;
+  border-radius: inherit;
 }
 @media (any-hover: hover) {
   .select__option:hover {
@@ -2712,11 +2722,5 @@ button[aria-label]::before {
   padding-top: var(--offsetTop);
   border-top: var(--border);
 }
-
-/*
-.header,
-main > *:not(:last-child), .footer {
-    display: none !important;
-} */
 
 /*# sourceMappingURL=main.css.map */

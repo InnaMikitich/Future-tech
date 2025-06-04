@@ -4,7 +4,7 @@
 @use './_utils.scss';
 @use './_globals.scss';
 
-@use './blocks/expandable-content';
+@use './blocks/_expandable-content';
 @use './blocks/icon';
 @use './blocks/logo';
 @use './blocks/header';
@@ -18,43 +18,37 @@
 @use './blocks/hero';
 @use './blocks/resources-preview';
 @use './blocks/team';
-@use './blocks/card';
-@use './blocks/section';
-@use './blocks/list';
-@use './blocks/tile';
-@use './blocks/tag';
-@use './blocks/tabs';
-@use './blocks/person-card';
-@use './blocks/blog-actions';
-@use './blocks/blog-card';
-@use './blocks/download-info';
-@use './blocks/bordered-grid';
-@use './blocks/rating-view';
-@use './blocks/review-card';
-@use './blocks/about-card';
-@use './blocks/about';
-@use './blocks/hero-alt';
-@use './blocks/summary';
-@use './blocks/news-card';
-@use './blocks/news';
-@use './blocks/video-player';
-@use './blocks/video-card';
-@use './blocks/table-of-contents';
-@use './blocks/blog-details';
-@use './blocks/report-card';
-@use './blocks/field';
-@use './blocks/select';
-@use './blocks/contacts-card';
-@use './blocks/checkbox';
-@use './blocks/feedback-form';
-@use './blocks/contacts';
-@use './blocks/accordion-group';
-@use './blocks/accordion';
+@use './blocks/_card';
+@use './blocks/_section';
+@use './blocks/_list';
+@use './blocks/_tile';
+@use './blocks/_tag';
+@use './blocks/_tabs';
+@use './blocks/_person-card';
+@use './blocks/_blog-actions';
+@use './blocks/_blog-card';
+@use './blocks/_download-info';
+@use './blocks/_bordered-grid';
+@use './blocks/_rating-view';
+@use './blocks/_review-card';
+@use './blocks/_about-card';
+@use './blocks/_about';
+@use './blocks/_hero-alt';
+@use './blocks/_summary';
+@use './blocks/_news-card';
+@use './blocks/_news';
+@use './blocks/_video-player';
+@use './blocks/_video-card';
+@use './blocks/_table-of-contents';
+@use './blocks/_blog-details';
+@use './blocks/_report-card';
+@use './blocks/_field';
+@use './blocks/_select';
+@use './blocks/_contacts-card';
+@use './blocks/_checkbox';
+@use './blocks/_feedback-form';
+@use './blocks/_contacts';
+@use './blocks/_accordion-group';
+@use './blocks/_accordion';
 
 
-
-
-.header,
-main > *:not(:last-child), .footer {
-    display: none !important;
-} 

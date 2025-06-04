@@ -140,5 +140,5 @@ class TabsCollection {
 
 
 
-console.log('Скрипт загружен');
+
 export default  TabsCollection 
